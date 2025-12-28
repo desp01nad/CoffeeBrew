@@ -1,0 +1,52 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "CoffeeBrew Syntagma",
+      "address": "Mitropoleos 3, Athens 105 57",
+      "city": "Athens",
+      "hours": "07:00 - 23:00",
+      "phone": "+30 210 3234567",
+      "coordinates": {
+        "lat": 37.9755,
+        "lng": 23.7348
+      }
+    },
+    {
+      "id": 2,
+      "name": "CoffeeBrew Kolonaki",
+      "address": "Patriarchou Ioakim 15, Athens 106 75",
+      "city": "Athens",
+      "hours": "08:00 - 00:00",
+      "phone": "+30 210 7212345",
+      "coordinates": {
+        "lat": 37.9794,
+        "lng": 23.7431
+      }
+    },
+    {
+      "id": 3,
+      "name": "CoffeeBrew Monastiraki",
+      "address": "Ermou 85, Athens 105 55",
+      "city": "Athens",
+      "hours": "07:30 - 22:30",
+      "phone": "+30 210 3219876",
+      "coordinates": {
+        "lat": 37.9768,
+        "lng": 23.7258
+      }
+    },
+    {
+      "id": 4,
+      "name": "CoffeeBrew Glyfada (Seaside)",
+      "address": "Angelou Metaxa 22, Glyfada 166 75",
+      "city": "Glyfada",
+      "hours": "08:00 - 01:00",
+      "phone": "+30 210 8945678",
+      "coordinates": {
+        "lat": 37.8647,
+        "lng": 23.7554
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "title": "Cappuccino",
+      "price": 2.30,
+      "currency": "€",
+      "promo_label": "1+1",
+      "image": "cappuccino_offer.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Vanilla Latte",
+      "price": 2.80,
+      "currency": "€",
+      "promo_label": "30% off",
+      "image": "vanilla_latte.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Cappuccino & Brownies",
+      "price": 4.50,
+      "currency": "€",
+      "promo_label": "combo",
+      "image": "combo_brownie.jpg"
+    }
+  ]
+}
