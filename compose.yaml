@@ -19,6 +19,7 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
     volumes:
       - coffee-data:/var/lib/postgresql
+      - ./seed-db.sql:/docker-entrypoint-initdb.d/seed-db.sql
     networks:
       - coffee-net
 
