@@ -1,0 +1,30 @@
+services:
+  db-admin:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - coffee-net
+
+  postgres-db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    volumes:
+      - coffee-data:/var/lib/postgresql
+    networks:
+      - coffee-net
+
+volumes:
+  coffee-data:   
+
+networks:
+  coffee-net: {}
+  
