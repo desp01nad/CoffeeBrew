@@ -45,6 +45,18 @@ services:
     networks:
       - coffee-net
 
+  appsmith:
+    image: appsmith/appsmith-ce
+    container_name: appsmith
+    ports:
+        - "80:80"
+        - "443:443"
+    volumes:
+        - ./stacks:/appsmith-stacks
+    restart: always
+    networks:
+      - coffee-net
+
 volumes:
   coffee-data:   
 
