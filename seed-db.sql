@@ -11,6 +11,7 @@ create table MenuItem (
 ItemId SERIAL primary key,
 Name TEXT not null,
 Price DECIMAL(12,2) not null,
+Category TEXT,
 Image TEXT
 );
 
@@ -56,9 +57,9 @@ constraint FK_Favorite_Customer
 insert into customer (firstname, lastname, email, phone, password) values
 	('Admin', 'Admin', 'admin@admin.com', '123456789', '12345');
 	
-insert into menuitem (name, price, image) values
-	('Cappuccino', '2.50', 'cappuccinoUrl'),
-	('Latte', '3.00', 'latteUrl');
+insert into menuitem (name, price, category, image) values
+	('Cappuccino', 2.50, 'hot coffee', 'cappuccinoUrl'),
+	('Latte', 3.00, 'hot coffee', 'latteUrl');
 	
 
 
