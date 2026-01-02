@@ -57,7 +57,7 @@ constraint FK_Favorite_Customer
 );
 
 insert into customer (firstname, lastname, email, phone, password) values
-	('Admin', 'Admin', 'admin@admin.com', '123456789', '12345');
+	('Admin', 'Admin', 'admin@admin.com', '123456789', '$2a$10$98LA6/cJad0pFu3kc8EP.OfIjU3ErDsiULM2zergfjO4MvkzU5QVe');
 	
 insert into menuitem (name, price, category, image) values
 	('Espresso', 2.00, 'Hot Coffee', 'espressoUrl'),
