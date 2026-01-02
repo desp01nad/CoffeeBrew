@@ -19,6 +19,8 @@ create table CustomerOrder (
 OrderId SERIAL primary key,
 CustomerId INT,
 OrderedAt TIMESTAMP default NOW(),
+SelectedAddress TEXT,
+TotalCost DECIMAL(12,2) not null,
 
 constraint FK_CustomerOrder_Customer
 	foreign KEY(CustomerId)
@@ -91,8 +93,32 @@ insert into menuitem (name, price, category, image) values
 	('Blueberry Scones', 2.00, 'Sweet Snacks', 'bluberrySconesUrl'),
 	('Brownies', 2.50, 'Sweet Snacks', 'browniesUrl');
 
+insert into CustomerOrder (CustomerId, SelectedAddress, TotalCost) values
+	(1, 'myAddress1' , 9),
+	(1, 'myAddress2' , 2.5),
+	(1, 'myAddress1' , 15.5),
+	(1, 'myAddress3' , 23.3),
+	(1, 'myAddress2' , 30.5);
 
-	
+insert into Favorite (CustomerId, ItemId) values
+	(1, 1),
+	(1, 2),
+	(1, 15);
+
+insert into OrderedItem (OrderId, ItemId, Amount) values
+	(1, 1, 2),
+	(1, 3, 1),
+	(1, 15, 1),
+	(2, 3, 1),
+	(3, 7, 3),
+	(3, 9, 4),
+	(4, 12, 5),
+	(4, 2, 1),
+	(4, 21, 3),
+	(4, 9, 1),
+	(5, 8, 7),
+	(5, 21, 2);
+
 
 
 
