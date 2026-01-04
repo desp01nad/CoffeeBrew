@@ -91,7 +91,11 @@ insert into menuitem (name, price, category, image) values
 	('Pain au chocolate', 2.00, 'Sweet Snacks', 'painChocolateUrl'),
 	('Banana Bread', 2.50, 'Sweet Snacks', 'bananaBreadUrl'),
 	('Blueberry Scones', 2.00, 'Sweet Snacks', 'bluberrySconesUrl'),
-	('Brownies', 2.50, 'Sweet Snacks', 'browniesUrl');
+	('Brownies', 2.50, 'Sweet Snacks', 'browniesUrl'),
+
+    ('1+1 Cappuccino', 2.30, 'Promotion', 'cappuccino_offer.jpg'),
+    ('30% off Latte', 2.10, 'Promotion', 'latte.jpg'),
+    ('Combo! Cappuccino & Brownies', 4.50, 'Promotion', 'combo_brownie.jpg');
 
 insert into CustomerOrder (CustomerId, SelectedAddress, TotalCost) values
 	(1, 'myAddress1' , 9),

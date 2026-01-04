@@ -23,16 +23,16 @@ services:
     networks:
       - coffee-net
 
-  # API 1: Using the ready-made image (svenwal)
-  promotions-api:
-    image: svenwal/jsonplaceholder
-    container_name: promotions-api
-    ports:
-      - 3000:3000
-    volumes:
-      - ./promotions-svenwal.json:/usr/src/app/db.json  # Overwrite default db.json with custom data
-    networks:
-      - coffee-net
+  # # API 1: Using the ready-made image (svenwal)
+  # promotions-api:
+  #   image: svenwal/jsonplaceholder
+  #   container_name: promotions-api
+  #   ports:
+  #     - 3000:3000
+  #   volumes:
+  #     - ./promotions-svenwal.json:/usr/src/app/db.json  # Overwrite default db.json with custom data
+  #   networks:
+  #     - coffee-net
 
   # API 2: Using a custom Dockerfile
   locations-api:
