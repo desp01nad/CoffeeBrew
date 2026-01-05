@@ -79,7 +79,7 @@ insert into menuitem (name, price, category, image) values
 	('White Chocolate', 2.50, 'Chocolate', 'whiteChocolateUrl'),
 	('Dark Chocolate', 2.50, 'Chocolate', 'darkChocolateUrl'),
 
-	('Fresh Organge Juice', 2.00, 'Beverages', 'orangeJuiceUrl'),
+	('Fresh Orange Juice', 2.00, 'Beverages', 'orangeJuiceUrl'),
 	('Fresh Lemonade', 2.50, 'Beverages', 'lemonadeUrl'),
 	('Sparkling Water', 2.00, 'Beverages', 'sparklingWaterUrl'),
 
