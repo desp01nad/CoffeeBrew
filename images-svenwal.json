@@ -1,0 +1,166 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "category": "Hot Coffee",
+      "image": "/menu-images/espresso.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "category": "Hot Coffee",
+      "image": "/menu-images/cappuccino.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Flat White",
+      "category": "Hot Coffee",
+      "image": "/menu-images/flat-white.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Latte",
+      "category": "Hot Coffee",
+      "image": "/menu-images/latte.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Freddo Espresso",
+      "category": "Cold Coffee",
+      "image": "/menu-images/freddo-espresso.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Freddo Cappuccino",
+      "category": "Cold Coffee",
+      "image": "/menu-images/freddo-cappuccino.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Cold Brew",
+      "category": "Cold Coffee",
+      "image": "/menu-images/cold-brew.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Iced Latte",
+      "category": "Cold Coffee",
+      "image": "/menu-images/iced-latte.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Black Tea",
+      "category": "Tea",
+      "image": "/menu-images/black-tea.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Green Tea",
+      "category": "Tea",
+      "image": "/menu-images/green-tea.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Jasmine Tea",
+      "category": "Tea",
+      "image": "/menu-images/jasmine-tea.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Matcha Tea",
+      "category": "Tea",
+      "image": "/menu-images/matcha-tea.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Chocolate",
+      "category": "Chocolate",
+      "image": "/menu-images/chocolate.jpg"
+    },
+    {
+      "id": 14,
+      "name": "White Chocolate",
+      "category": "Chocolate",
+      "image": "/menu-images/white-chocolate.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Dark Chocolate",
+      "category": "Chocolate",
+      "image": "/menu-images/dark-chocolate.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Fresh Orange Juice",
+      "category": "Beverages",
+      "image": "/menu-images/fresh-orange-juice.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Fresh Lemonade",
+      "category": "Beverages",
+      "image": "/menu-images/fresh-lemonade.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Sparkling Water",
+      "category": "Beverages",
+      "image": "/menu-images/sparkling-water.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Grilled Cheese",
+      "category": "Salty Snacks",
+      "image": "/menu-images/grilled-cheese.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Spanakopita",
+      "category": "Salty Snacks",
+      "image": "/menu-images/spanakopita.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Avocado Toast",
+      "category": "Salty Snacks",
+      "image": "/menu-images/avocado-toast.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Ham & Cheese Croissant",
+      "category": "Salty Snacks",
+      "image": "/menu-images/ham-cheese-croissant.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Pain au chocolate",
+      "category": "Sweet Snacks",
+      "image": "/menu-images/pain-au-chocolate.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Banana Bread",
+      "category": "Sweet Snacks",
+      "image": "/menu-images/banana-bread.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Blueberry Scones",
+      "category": "Sweet Snacks",
+      "image": "/menu-images/blueberry-scones.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Brownies",
+      "category": "Sweet Snacks",
+      "image": "/menu-images/brownies.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Combo! Cappuccino & Brownie",
+      "category": "Promotion",
+      "image": "/menu-images/combo-cappuccino-brownies.jpg"
+    }
+  ]
+}
