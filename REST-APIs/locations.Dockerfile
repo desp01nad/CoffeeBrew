@@ -8,7 +8,7 @@ WORKDIR /app
 RUN npm install -g json-server@0.17.4
 
 # 4. Copy your data
-COPY locations-json-server.json .
+COPY ./REST-APIs/locations-json-server.json .
 
 # 5. Expose the port
 EXPOSE 3000

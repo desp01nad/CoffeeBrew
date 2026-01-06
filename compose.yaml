@@ -30,8 +30,8 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./images-svenwal.json:/usr/src/app/db.json  # Overwrite default db.json with custom data
-      - ./menu-images:/usr/src/app/public/menu-images
+      - ./REST-APIs/images-svenwal.json:/usr/src/app/db.json  # Overwrite default db.json with custom data
+      - ./REST-APIs/menu-images:/usr/src/app/public/menu-images
     networks:
       - coffee-net
 
@@ -39,7 +39,7 @@ services:
   locations-api:
     build: 
       context: .
-      dockerfile: ./locations.Dockerfile
+      dockerfile: ./REST-APIs/locations.Dockerfile
     container_name: locations-api
     ports:
       - 3001:3000
