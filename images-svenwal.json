@@ -158,9 +158,21 @@
     },
     {
       "id": 27,
-      "name": "Combo! Cappuccino & Brownie",
+      "name": "Combo! Cappuccino & Brownies",
       "category": "Promotion",
       "image": "/menu-images/combo-cappuccino-brownies.jpg"
+    },
+    {
+      "id": 28,
+      "name": "1+1 Cappuccino",
+      "category": "Promotion",
+      "image": "/menu-images/cappuccino.jpg"
+    },
+    {
+      "id": 29,
+      "name": "30% off Latte",
+      "category": "Promotion",
+      "image": "/menu-images/latte.jpg"
     }
   ]
 }
