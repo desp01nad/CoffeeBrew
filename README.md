@@ -74,9 +74,8 @@ After importing, reconnect the following data sources:
 
 ### 5. Launch Application
 
-1. Click **Continue to Application**
-2. Return to Appsmith's projects page
-3. Click **Launch** on the Coffee Brew project
+1. Click **Go to Application**
+2. Click **Deploy** on the top right corner
 
 ---
 
