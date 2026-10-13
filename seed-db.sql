@@ -60,49 +60,49 @@ insert into customer (firstname, lastname, email, phone, password) values
 	('Admin', 'Admin', 'admin@admin.com', '123456789', '$2a$10$98LA6/cJad0pFu3kc8EP.OfIjU3ErDsiULM2zergfjO4MvkzU5QVe');
 	
 insert into menuitem (name, price, category, image) values
-	('Espresso', 2.00, 'Hot Coffee', 'espressoUrl'),
-	('Cappuccino', 2.30, 'Hot Coffee', 'cappuccinoUrl'),
-	('Flat White', 2.50, 'Hot Coffee', 'flatWhiteUrl'),
-	('Latte', 3.00, 'Hot Coffee', 'latteUrl'),
+	('Espresso', 2.00, 'Hot Coffee', '/menu-images/espresso.jpg'),
+	('Cappuccino', 2.30, 'Hot Coffee', '/menu-images/cappuccino.jpg'),
+	('Flat White', 2.50, 'Hot Coffee', '/menu-images/flat-white.jpg'),
+	('Latte', 3.00, 'Hot Coffee', '/menu-images/latte.jpg'),
 
-	('Freddo Espresso', 2.00, 'Cold Coffee', 'freddoEspressoUrl'),
-	('Freddo Cappuccino', 2.30, 'Cold Coffee', 'freddoCapuccinoUrl'),
-	('Cold Brew', 2.50, 'Cold Coffee', 'coldBrewUrl'),
-	('Iced Latte', 3.50, 'Cold Coffee', 'icedLatteUrl'),
+	('Freddo Espresso', 2.00, 'Cold Coffee', '/menu-images/freddo-espresso.jpg'),
+	('Freddo Cappuccino', 2.30, 'Cold Coffee', '/menu-images/freddo-cappuccino.jpg'),
+	('Cold Brew', 2.50, 'Cold Coffee', '/menu-images/cold-brew.jpg'),
+	('Iced Latte', 3.50, 'Cold Coffee', '/menu-images/iced-latte.jpg'),
 
-	('Black Tea', 2.00, 'Tea', 'blackTeaUrl'),
-	('Green Tea', 2.00, 'Tea', 'greenTeaUrl'),
-	('Jasmine Tea', 2.00, 'Tea', 'jasmineTeaUrl'),
-	('Matcha Tea', 2.00, 'Tea', 'matchaTeaUrl'),
+	('Black Tea', 2.00, 'Tea', '/menu-images/black-tea.jpg'),
+	('Green Tea', 2.00, 'Tea', '/menu-images/green-tea.jpg'),
+	('Jasmine Tea', 2.00, 'Tea', '/menu-images/jasmine-tea.jpg'),
+	('Matcha Tea', 2.00, 'Tea', '/menu-images/matcha-tea.jpg'),
 
-	('Chocolate', 2.00, 'Chocolate', 'chocolateUrl'),
-	('White Chocolate', 2.50, 'Chocolate', 'whiteChocolateUrl'),
-	('Dark Chocolate', 2.50, 'Chocolate', 'darkChocolateUrl'),
+	('Chocolate', 2.00, 'Chocolate', '/menu-images/chocolate.jpg'),
+	('White Chocolate', 2.50, 'Chocolate', '/menu-images/white-chocolate.jpg'),
+	('Dark Chocolate', 2.50, 'Chocolate', '/menu-images/dark-chocolate.jpg'),
 
-	('Fresh Orange Juice', 2.00, 'Beverages', 'orangeJuiceUrl'),
-	('Fresh Lemonade', 2.50, 'Beverages', 'lemonadeUrl'),
-	('Sparkling Water', 2.00, 'Beverages', 'sparklingWaterUrl'),
+	('Fresh Orange Juice', 2.00, 'Beverages', '/menu-images/fresh-orange-juice.jpg'),
+	('Fresh Lemonade', 2.50, 'Beverages', '/menu-images/fresh-lemonade.jpg'),
+	('Sparkling Water', 2.00, 'Beverages', '/menu-images/sparkling-water.jpg'),
 
-	('Grilled Cheese', 2.00, 'Salty Snacks', 'grilledCheseUrl'),
-	('Spanakopita', 2.50, 'Salty Snacks', 'spanakopitaUrl'),
-	('Avocado Toast', 3.00, 'Salty Snacks', 'avocadoToastUrl'),
-	('Ham & Cheese Croissant', 2.50, 'Salty Snacks', 'saltyCroissantUrl'),
+	('Grilled Cheese', 2.00, 'Salty Snacks', '/menu-images/grilled-cheese.jpg'),
+	('Spanakopita', 2.50, 'Salty Snacks', '/menu-images/spanakopita.jpg'),
+	('Avocado Toast', 3.00, 'Salty Snacks', '/menu-images/avocado-toast.jpg'),
+	('Ham & Cheese Croissant', 2.50, 'Salty Snacks', '/menu-images/ham-cheese-croissant.jpg'),
 
-	('Pain au chocolate', 2.00, 'Sweet Snacks', 'painChocolateUrl'),
-	('Banana Bread', 2.50, 'Sweet Snacks', 'bananaBreadUrl'),
-	('Blueberry Scones', 2.00, 'Sweet Snacks', 'bluberrySconesUrl'),
-	('Brownies', 2.50, 'Sweet Snacks', 'browniesUrl'),
+	('Pain au chocolat', 2.00, 'Sweet Snacks', '/menu-images/pain-au-chocolat.jpg'),
+	('Banana Bread', 2.50, 'Sweet Snacks', '/menu-images/banana-bread.jpg'),
+	('Blueberry Scones', 2.00, 'Sweet Snacks', '/menu-images/blueberry-scones.jpg'),
+	('Brownies', 2.50, 'Sweet Snacks', '/menu-images/brownies.jpg'),
 
-    ('1+1 Cappuccino', 2.30, 'Promotion', 'cappuccino_offer.jpg'),
-    ('30% off Latte', 2.10, 'Promotion', 'latte.jpg'),
-    ('Combo! Cappuccino & Brownies', 4.50, 'Promotion', 'combo_brownie.jpg');
+	('1+1 Cappuccino', 2.30, 'Promotion', '/menu-images/cappuccino.jpg'),
+	('30% off Latte', 2.10, 'Promotion', '/menu-images/latte.jpg'),
+	('Combo! Cappuccino & Brownies', 4.50, 'Promotion', '/menu-images/combo-cappuccino-brownies.jpg');
 
 insert into CustomerOrder (CustomerId, SelectedAddress, TotalCost) values
-	(1, 'myAddress1' , 9),
-	(1, 'myAddress2' , 2.5),
-	(1, 'myAddress1' , 15.5),
-	(1, 'myAddress3' , 23.3),
-	(1, 'myAddress2' , 30.5);
+	(1, 'Mitropoleos 3, Athens 105 57', 9),
+	(1, 'Patriarchou Ioakim 15, Athens 106 75', 2.5),
+	(1, 'Mitropoleos 3, Athens 105 57', 15.5),
+	(1, 'Ermou 85, Athens 105 55', 23.3),
+	(1, 'Patriarchou Ioakim 15, Athens 106 75', 30.5);
 
 insert into Favorite (CustomerId, ItemId) values
 	(1, 1),
@@ -122,8 +122,3 @@ insert into OrderedItem (OrderId, ItemId, Amount) values
 	(4, 9, 1),
 	(5, 8, 7),
 	(5, 21, 2);
-
-
-
-
-
