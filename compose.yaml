@@ -1,22 +1,27 @@
 services:
   db-admin:
-    image: adminer
+    image: adminer:5.5.1
     restart: always
     ports:
       - 8080:8080
+    depends_on:
+      postgres-db:
+        condition: service_healthy
     networks:
       - coffee-net
 
   postgres-db:
-    image: postgres
+    image: postgres:18.6
     restart: always
     shm_size: 128mb
     ports:
       - 5432:5432
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mysecretpassword
+    env_file: .env
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
     volumes:
       - coffee-data:/var/lib/postgresql
       - ./seed-db.sql:/docker-entrypoint-initdb.d/seed-db.sql
@@ -25,7 +30,7 @@ services:
 
   # API 1: Using the ready-made image (svenwal)
   images-api:
-    image: svenwal/jsonplaceholder
+    image: svenwal/jsonplaceholder:1.1
     container_name: images-api
     ports:
       - 3000:3000
@@ -37,7 +42,7 @@ services:
 
   # API 2: Using a custom Dockerfile
   locations-api:
-    build: 
+    build:
       context: .
       dockerfile: ./REST-APIs/locations.Dockerfile
     container_name: locations-api
@@ -47,20 +52,21 @@ services:
       - coffee-net
 
   appsmith:
-    image: appsmith/appsmith-ce
+    image: appsmith/appsmith-ce:v1.95
     container_name: appsmith
     ports:
         - "80:80"
-        - "443:443"
     volumes:
         - ./stacks:/appsmith-stacks
     restart: always
+    depends_on:
+      postgres-db:
+        condition: service_healthy
     networks:
       - coffee-net
 
 volumes:
-  coffee-data:   
+  coffee-data:
 
 networks:
   coffee-net: {}
-  

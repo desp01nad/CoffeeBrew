@@ -1,2 +1,3 @@
 stacks/
 firestore_creds.json
+.env
