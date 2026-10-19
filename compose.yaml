@@ -55,7 +55,7 @@ services:
     image: appsmith/appsmith-ce:v1.95
     container_name: appsmith
     ports:
-        - "80:80"
+        - "8000:80"
     volumes:
         - ./stacks:/appsmith-stacks
     restart: always
